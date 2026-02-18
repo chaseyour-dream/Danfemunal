@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Danphe Munal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: rgba(3, 105, 161, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #0369a1;
+        }
+        
+        h1 {
+            font-size: 120px;
+            font-weight: bold;
+            color: #0369a1;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        
+        h2 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .divider {
+            width: 80px;
+            height: 4px;
+            background: #0369a1;
+            margin: 30px auto;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #0369a1;
+            color: white;
+            box-shadow: 0 4px 12px rgba(3, 105, 161, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: #025485;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(3, 105, 161, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #0369a1;
+            border: 2px solid #0369a1;
+        }
+        
+        .btn-secondary:hover {
+            background: #0369a1;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .links p {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .quick-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .quick-link {
+            padding: 8px 16px;
+            background: #f3f4f6;
+            color: #0369a1;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-link:hover {
+            background: #e5e7eb;
+            transform: translateY(-1px);
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 40px 24px;
+            }
+            
+            h1 {
+                font-size: 80px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+            
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">⚠️</div>
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Oops! The page you're looking for doesn't exist. It might have been moved or deleted.</p>
+        
+        <div class="divider"></div>
+        
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">🏠 Go to Homepage</a>
+            <a href="javascript:history.back()" class="btn btn-secondary">← Go Back</a>
+        </div>
+        
+        <div class="links">
+            <p>Looking for something specific? Try these popular pages:</p>
+            <div class="quick-links">
+                <a href="/admin/" class="quick-link">Admin</a>
+                <a href="/api/products/" class="quick-link">Products API</a>
+                <a href="/api/services/" class="quick-link">Services API</a>
+                <a href="/api/events/" class="quick-link">Events API</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
